@@ -1,3 +1,33 @@
+.navbar{
+    background: #23238E;
+    padding: 15px;
+}
+.nav a{
+    color: white;
+}
+.nav li{
+    margin-right: 15px;
+
+}
+.navbar-nav li a:hover{
+    background: rgb(128, 0, 128);
+    color: black;
+}
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-brand span{
+    color: white;
+    margin-left: 20px;
+}
+.logo{
+    width: 70px;
+}
+
+
+
 .img1{
     margin-top: 170px;
     margin-left: 60%;
@@ -18,18 +48,6 @@
     top: 0px;
     left:0;
 }
-.camada2 {
-    background: url(../img/motoboy-only.png)no-repeat;
-    width: 50%;
-    height: 780px;
-    position: absolute;
-    z-index: 2;
-    top: 0px;
-    left:30%;
-    margin-top: 80px;
-    
-}
-
 .texto1{
     top: 15%;
     left: 15%;
@@ -38,28 +56,49 @@
     color: white;
     border: 2px solid red;
     border-radius: 30px;
-    animation: efeito 1s ease-in;
+    animation: efeito 1.5s ease-in;
     transform-origin: center bottom;
     position: absolute;
     z-index: 2;
 }
-.texto2{
-    top: 21%;
-    left: 15%;
-    font-size: 1em;
-    color: white;
+.motoboy {
+  
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left:30%;
+    margin-top: 80px;
     animation: efeito 2s ease-in;
     transform-origin: center bottom;
-    position: absolute;
-    z-index: 2;
+
 }
-.texto3{
-    top: 30%;
-    left: 15%;
-    font-size: 17px;
-    color: white;
-    animation: efeito 2.5s ease-in;
-    transform-origin: center bottom;
-    position: absolute;
-    z-index: 2;
+
+@keyframes efeito{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .navbar-header button{
+        border: 1px solid white;  
+    }
+    .navbar-header button span{
+        border: 1px solid white;
+
+    }      
+    .navbar-header button:focus {
+        background: rgb(128, 0, 128);
+    }  
+    .navbar-header button:focus  .icon-bar{
+        border: 1px solid white;
+    }
+    .navbar-brand span{
+    display:none;
+}
 }
