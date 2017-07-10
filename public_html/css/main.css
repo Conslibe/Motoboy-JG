@@ -1,0 +1,65 @@
+.img1{
+    margin-top: 170px;
+    margin-left: 60%;
+}
+
+.img2{
+    margin-top: 0;
+}
+.img3{
+    margin-top: 40px;
+}
+.camada {
+    background: linear-gradient(to right, rgba(0,0,0,1)90%,rgba(255,255,255,0));
+    width: 50%;
+    height: 780px;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left:0;
+}
+.camada2 {
+    background: url(../img/motoboy-only.png)no-repeat;
+    width: 50%;
+    height: 780px;
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left:30%;
+    margin-top: 80px;
+    
+}
+
+.texto1{
+    top: 15%;
+    left: 15%;
+    font-size: 2em;
+    font-family: inherit;
+    color: white;
+    border: 2px solid red;
+    border-radius: 30px;
+    animation: efeito 1s ease-in;
+    transform-origin: center bottom;
+    position: absolute;
+    z-index: 2;
+}
+.texto2{
+    top: 21%;
+    left: 15%;
+    font-size: 1em;
+    color: white;
+    animation: efeito 2s ease-in;
+    transform-origin: center bottom;
+    position: absolute;
+    z-index: 2;
+}
+.texto3{
+    top: 30%;
+    left: 15%;
+    font-size: 17px;
+    color: white;
+    animation: efeito 2.5s ease-in;
+    transform-origin: center bottom;
+    position: absolute;
+    z-index: 2;
+}
