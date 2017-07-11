@@ -1,3 +1,5 @@
+
+/* NAV*/
 .navbar{
     background: #23238E;
     /*background: #221F30;*/ /* Mais uma opção*/
@@ -27,7 +29,7 @@
     width: 70px;
 }
 
-
+/* SLIDE */
 
 .img1{
     margin-top: 170px;
@@ -63,7 +65,7 @@
     z-index: 2;
 }
 .motoboy {
-  
+
     position: absolute;
     z-index: 2;
     top: 0px;
@@ -73,44 +75,6 @@
     transform-origin: center bottom;
 
 }
-.contato{
-    background:  #221F30;
-    
-}
-
-.form-group>input,
-.end-form,
-.num-form,
-.comp-form,
-.bairr-form,
-.form-group>textarea{
-    background: #221F30;
-    border: 1px solid white;
-    border-radius: 5px;
-}
-
-.form-group>input::placeholder,
-.inline-form>input::placeholder,
-.form-group>textarea::placeholder{
-    color: white;
-}
-
-.inline-form{
-    display: flex;
-    margin-bottom: 15px;
-}
-.num-form{
-    width: 10%;
-    margin-left: 2px;
-    margin-right: 2px;
-}
-.comp-form{
-    width: 30%;
-    margin-right: 2px;
-}
-.bairr-form{
-    width: 30%;
-    }
 
 @keyframes efeito{
     from{
@@ -119,6 +83,87 @@
     to{
         opacity: 1;
     }
+}
+/* SERVIÇOS */
+.servicos{
+    background: #23238E;
+    color: white;
+}
+/* CLIENTES */
+.clientes{
+    background: rgb(128, 0, 128);
+    color: white;
+}
+/* QUEM SOMOS */
+.quemsomos{
+
+}
+/* CONTATO */
+
+.contato{
+ position: relative;
+ background: #1F1F1F;
+ position: relative
+
+}
+.contato h1{
+    color: white;
+    margin: 50px 0;
+}
+
+
+.form-control{
+    width: 100%;
+}
+
+.contato input::placeholder,
+.contato textArea::placeholder{
+  color: white;
+}
+
+.form-group>input,
+.form-group textArea{
+    border: 2px solid white;
+    border-radius: 8px;
+    background: #1F1F1F;
+    color:white;
+}
+.form-group{
+    margin-top: 5px;
+}
+.form-group label{
+    color: black;
+}
+
+
+.address{
+    margin-top: 30px;
+}
+
+address .titulos-paragrafos{
+    font-size: 16px;
+    font-family: inherit;
+    color: #ECC567;
+    font-weight: bold;
+}
+address .conteudo{
+    font-size: 13px;
+    font-family: inherit;
+    color: white;
+    
+}
+/* FOOTER */    
+footer{
+    height: 80px;
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.9)40%, rgba(255, 255, 255, 0.2)); 
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 25px;
+}
+footer img{
+    width: 2em;
+    height: 2em;
 }
 /* MOBILE */
 
@@ -138,8 +183,19 @@
         border: 1px solid white;
     }
     .navbar-brand span{
-    display:none;
+        display:none;
+    }
+/* CONTATO */ 
+
+/* FOOTER */  
+    footer{
+        height: 4em;
+        font-size: 1em;
+        padding: 1em;
+    }
 }
+
+
 .texto3{
     top: 30%;
     left: 15%;
@@ -150,7 +206,7 @@
     position: absolute;
     z-index: 2;
 }
-}
+
 
 
 
