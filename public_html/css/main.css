@@ -1,3 +1,34 @@
+.navbar{
+    background: #23238E;
+    /*background: #221F30;*/ /* Mais uma opção*/
+    padding: 15px;
+}
+.nav a{
+    color: white;
+}
+.nav li{
+    margin-right: 15px;
+
+}
+.navbar-nav li a:hover{
+    background: rgb(128, 0, 128);
+    color: black;
+}
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-brand span{
+    color: white;
+    margin-left: 20px;
+}
+.logo{
+    width: 70px;
+}
+
+
+
 .img1{
     margin-top: 170px;
     margin-left: 60%;
@@ -18,18 +49,6 @@
     top: 0px;
     left:0;
 }
-.camada2 {
-    background: url(../img/motoboy-only.png)no-repeat;
-    width: 50%;
-    height: 780px;
-    position: absolute;
-    z-index: 2;
-    top: 0px;
-    left:30%;
-    margin-top: 80px;
-    
-}
-
 .texto1{
     top: 15%;
     left: 15%;
@@ -38,20 +57,88 @@
     color: white;
     border: 2px solid red;
     border-radius: 30px;
-    animation: efeito 1s ease-in;
+    animation: efeito 1.5s ease-in;
     transform-origin: center bottom;
     position: absolute;
     z-index: 2;
 }
-.texto2{
-    top: 21%;
-    left: 15%;
-    font-size: 1em;
-    color: white;
-    animation: efeito 2s ease-in;
-    transform-origin: center bottom;
+.motoboy {
+  
     position: absolute;
     z-index: 2;
+    top: 0px;
+    left:30%;
+    margin-top: 80px;
+    animation: efeito 2s ease-in;
+    transform-origin: center bottom;
+
+}
+.contato{
+    background:  #221F30;
+    
+}
+
+.form-group>input,
+.end-form,
+.num-form,
+.comp-form,
+.bairr-form,
+.form-group>textarea{
+    background: #221F30;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.form-group>input::placeholder,
+.inline-form>input::placeholder,
+.form-group>textarea::placeholder{
+    color: white;
+}
+
+.inline-form{
+    display: flex;
+    margin-bottom: 15px;
+}
+.num-form{
+    width: 10%;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.comp-form{
+    width: 30%;
+    margin-right: 2px;
+}
+.bairr-form{
+    width: 30%;
+    }
+
+@keyframes efeito{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .navbar-header button{
+        border: 1px solid white;  
+    }
+    .navbar-header button span{
+        border: 1px solid white;
+
+    }      
+    .navbar-header button:focus {
+        background: rgb(128, 0, 128);
+    }  
+    .navbar-header button:focus  .icon-bar{
+        border: 1px solid white;
+    }
+    .navbar-brand span{
+    display:none;
 }
 .texto3{
     top: 30%;
@@ -63,34 +150,7 @@
     position: absolute;
     z-index: 2;
 }
-
-
-.contato{
-    background:  #747E5A;
 }
 
-.inline-form{
-    display: flex;
-    margin-bottom: 15px;
-}
-.inline-form>#numero-origem,
-.inline-form>#numero-destino{
-    width: 10%;
-    margin-left: 2px;
-    margin-right: 2px;
-}
-.inline-form>#c,
-.inline-form>#numero-destino{
-    width: 10%;
-    margin-left: 2px;
-    margin-right: 2px;
-}
-.inline-form>#complemento-origem,
-.inline-form>#complemento-destino{
-    width: 30%;
-    margin-right: 2px;
-}
-.inline-form>#bairro-origem,
-.inline-form>#bairro-destino{
-    width: 30%;
-}
+
+
