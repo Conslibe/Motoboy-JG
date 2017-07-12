@@ -28,62 +28,72 @@
 .logo{
     width: 70px;
 }
-
+h2{
+    text-align: center;
+}
 /* SLIDE */
 
-.img1{
-    margin-top: 170px;
-    margin-left: 60%;
-}
 
-.img2{
-    margin-top: 0;
+.principal{
+    width: 100%;
+    padding: 0 7%;
+    display: table;
+    margin: 0;
+    max-width: none;
+    background: url(../img/cidade2.jpg);
 }
-.img3{
-    margin-top: 40px;
+.texto{
+    font-family: "Arial";
 }
-.camada {
-    background: linear-gradient(to right, rgba(0,0,0,1)90%,rgba(255,255,255,0));
-    width: 50%;
-    height: 780px;
+.bem-vindo{
     position: absolute;
-    z-index: 1;
-    top: 0px;
-    left:0;
+    color: #23238E;
+    top: 35%;
+    left: 30%;
+    font-size: 3.5em;
+    animation:  efeito 3s ease-in;
+    transform: scale(1.2);
 }
 .texto1{
-    top: 15%;
-    left: 15%;
-    font-size: 2em;
-    font-family: inherit;
-    color: white;
-    border: 2px solid red;
-    border-radius: 30px;
-    animation: efeito 1.5s ease-in;
-    transform-origin: center bottom;
     position: absolute;
-    z-index: 2;
+    margin-top: 30px;
+    color: rgb(128, 0, 128);
+    top: 45%;
+    left: 30%;
+    font-size: 3em;
+    animation:  efeito 4s  ease-in;
+    
+    transform: scale(1.2);
 }
-.motoboy {
-
-    position: absolute;
-    z-index: 2;
-    top: 0px;
-    left:30%;
-    margin-top: 80px;
-    animation: efeito 2s ease-in;
-    transform-origin: center bottom;
-
-}
-
-@keyframes efeito{
-    from{
-        opacity:0;
+@keyframes efeito {
+    0% {
+        opacity: 0;
+        transform: scale(2);
     }
-    to{
+    70% {
         opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
     }
 }
+
+.motoboy {
+    position: absolute;
+    top: 15%;
+}
+.moto{
+    position: absolute;
+    top: 60%;
+    right: 20%;
+    width: 200px;
+    height: 200px;
+}
+.motoboy-efeito{
+    display: none;
+}
+
 /* SERVIÇOS */
 .servicos{
     background: #23238E;
@@ -101,9 +111,9 @@
 /* CONTATO */
 
 .contato{
- position: relative;
- background: #1F1F1F;
- position: relative
+    position: relative;
+    background: #1F1F1F;
+    position: relative
 
 }
 .contato h1{
@@ -118,7 +128,7 @@
 
 .contato input::placeholder,
 .contato textArea::placeholder{
-  color: white;
+    color: white;
 }
 
 .form-group>input,
@@ -150,7 +160,7 @@ address .conteudo{
     font-size: 13px;
     font-family: inherit;
     color: white;
-    
+
 }
 /* FOOTER */    
 footer{
@@ -185,28 +195,12 @@ footer img{
     .navbar-brand span{
         display:none;
     }
-/* CONTATO */ 
+    /* CONTATO */ 
 
-/* FOOTER */  
+    /* FOOTER */  
     footer{
         height: 4em;
         font-size: 1em;
         padding: 1em;
     }
 }
-
-
-.texto3{
-    top: 30%;
-    left: 15%;
-    font-size: 17px;
-    color: white;
-    animation: efeito 2.5s ease-in;
-    transform-origin: center bottom;
-    position: absolute;
-    z-index: 2;
-}
-
-
-
-
