@@ -32,16 +32,10 @@ h2{
     text-align: center;
 }
 /* SLIDE */
-
-
-.principal{
+.img-3{
     width: 100%;
-    padding: 0 7%;
-    display: table;
-    margin: 0;
-    max-width: none;
-    background: url(../img/cidade2.jpg);
 }
+
 .texto{
     font-family: "Arial";
 }
@@ -77,21 +71,17 @@ h2{
     100%{
         transform: scale(1.2);
     }
-}
-
-.motoboy {
+}.efeito{
     position: absolute;
-    top: 15%;
+    top: 45%;
+    left: 30%;
 }
-.moto{
-    position: absolute;
-    top: 60%;
-    right: 20%;
-    width: 200px;
-    height: 200px;
+.principal{
+    margin-top: 80px;
 }
-.motoboy-efeito{
+.esquerda,.peca1,.peca2,.peca3,.peca4,.moto{
     display: none;
+    opacity:0.9;
 }
 
 /* SERVIÇOS */
